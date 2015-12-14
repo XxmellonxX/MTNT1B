@@ -34,7 +34,7 @@ public $disabled;
     public function onEnable() {
 
         $this->getLogger()->info(TextFormat::BLUE ."===============");
-        $this->getLogger()->info(TextFormat::GREEN ."Plugin By Nawaf");
+        $this->getLogger()->info(TextFormat::GREEN ."Have FUN");
         $this->getLogger()->info(TextFormat::BLUE ."===============");
             $this->getServer ()->getPluginManager ()->registerEvents ( $this, $this );
     }
