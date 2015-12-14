@@ -134,4 +134,4 @@ public $disabled;
             $event->setDamage(10);
         }
     }
-
+}
