@@ -1,5 +1,5 @@
-# MTNT1B
-plugin By Nawaf_Craft1b
+#MTNT
+
 ---------
 Explosin Break False
 Place TNT Spawn Primed TNT
