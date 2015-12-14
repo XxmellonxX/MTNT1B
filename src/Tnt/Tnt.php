@@ -24,13 +24,6 @@ use pocketmine\network\protocol\UseItemPacket;
 use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\nbt\tag\Byte;
 class Tnt extends PluginBase implements Listener {
-    private $max=0;
-private $blocks;
-
-public $fall;
-public $bounceVelocity;
-public $disabled;
-
     public function onEnable() {
 
         $this->getLogger()->info(TextFormat::BLUE ."===============");
