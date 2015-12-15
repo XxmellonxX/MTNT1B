@@ -57,7 +57,7 @@ class Tnt extends PluginBase implements Listener {
 					new Float("", 0)
                                     
 				]),
-				"Fuse" => new Byte("Fuse", 80)
+				"Fuse" => new Byte("Fuse", 100)
 			]));
 
 			$tnt->spawnToAll();
@@ -100,7 +100,7 @@ class Tnt extends PluginBase implements Listener {
 					new Float("", 0)
                                     
 				]),
-				"Fuse" => new Byte("Fuse", 80)
+				"Fuse" => new Byte("Fuse", 100)
 			]));
 
 			$tnt->spawnToAll();
@@ -124,7 +124,14 @@ class Tnt extends PluginBase implements Listener {
             
   
          if($player instanceof Player && $event->getCause() === EntityDamageEvent::CAUSE_ENTITY_EXPLOSION){
+         	switch(mt_rand(1,2)){
+         		case 1:
             $event->setDamage(10);
+            break;
+            case 2:
+             $event->setDamage(8);	
+             break;
+         	}
         }
     }
 }
